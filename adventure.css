@@ -1,0 +1,12 @@
+.container {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: grey;
+    font-size: 1opx;
+}
+
+body {
+    background: url('Greg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

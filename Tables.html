@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Question 1</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>Nairobi</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>30</td>
+            <td>Mombasa</td>
+        </tr>
+    </table> <br>
+    <h3>Question 2: Table with 4 rows and 3 columns</h3>
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Mathematics</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>English</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Mathematics</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>English</td>
+            <td>88</td>
+        </tr>
+    </table> <br>
+    <h3>Question 3: Table headers on left column using <th> for first column</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+            <th>Evening</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td>English</td>
+            <td>History</td>
+            <td>Music</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Sports</td>
+        </tr>
+    </table> <br>
+    <h3>Question 4: Using colspan to merge cells </h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Information</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>Phone: 0712345678</td>
+            <td>Email: john@example.com</td>
+        </tr>
+
+        <tr>
+            <td>Mary</td>
+            <td>Phone: 0723456789</td>
+            <td>Email: mary@example.com</td>
+        </tr>
+    </table> <br>
+    <h3>Question 5: Using rowspan to merge cells</h3>
+    <table>
+        <tr>
+            <th>Department</th>
+            <th>Employee Name</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">IT</td>
+            <td>Alice</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">HR</td>
+            <td>David</td>
+        </tr>
+        <tr>
+            <td>Eva</td>
+        </tr>
+    </table> <br>
+    <h3>Question 6:combining colspan and rowspan</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>2023</th>
+            <th>2024</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">H1 (spans Q1+Q2)</td>
+            <td>Q1 100</td>
+            <td>150</td>
+        </tr>
+
+        <tr>
+            <td>Q2 120</td>
+            <td>160</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">H2 (spans Q3+Q4)</td>
+            <td>Q3 110</td>
+            <td>170</td>
+        </tr>
+
+        <tr>
+            <td>Q4 130</td>
+            <td>180</td>
+        </tr>
+    </table> <br>
+    <h3>Question 7:Nested Tables</h3>
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>Grade</th>
+            <th>Subjects & Scores</th>
+        </tr>
+
+        <tr>
+            <td>Alice</td>
+            <td>A</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Math: 90</td>
+                        <td>English: 85</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Bob</td>
+            <td>B+</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Math: 78</td>
+                        <td>English: 82</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table> <br>
+    <h3>Question 8:Table with multiple headers</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>Product A</th>
+            <th>Product B</th>
+            <th>Product C</th>
+        </tr>
+
+        <tr>
+            <th>Q1</th>
+            <td>1000</td>
+            <td>800</td>
+            <td>900</td>
+        </tr>
+
+        <tr>
+            <th>Q2</th>
+            <td>1200</td>
+            <td>600</td>
+            <td>750</td>
+        </tr>
+
+        <tr>
+            <th>Q3</th>
+            <td>1100</td>
+            <td>700</td>
+            <td>850</td>
+        </tr>
+
+        <tr>
+            <th>Q4</th>
+            <td>1300</td>
+            <td>650</td>
+            <td>950</td>
+        </tr>
+    </table> <br>
+    <h3>Question 9:Table with caption and different column widths</h3>
+
+    <table>
+        <caption>Employee Salary Report (March 2025)</caption>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>IT</td>
+            <td style="text-align: right;">75,000</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>HR</td>
+            <td style="text-align: right;">68,000</td>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Finance</td>
+            <td style="text-align: right;">82,000</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Marketing</td>
+            <td style="text-align: right;">70,000</td>
+        </tr>
+    </table> <br>
+    <h3>Question 10:Complete TimeTable</h3>
+    <table>
+        <caption>Weekly Class Timetable</caption>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <th>8:00-9:00</th>
+            <td>Math</td>
+            <td>English</td>
+            <td>Science</td>
+            <td>History</td>
+            <td>Art</td>
+        </tr>
+
+        <tr>
+            <th>9:00-10:00</th>
+            <td rowspan="2" style="text-align: center;">Lab Session</td>
+            <td>Math</td>
+            <td>PE</td>
+            <td>English</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <th>10:00-11:00</th>
+            <td>History</td>
+            <td>Art</td>
+            <td>Math</td>
+            <td>English</td>
+        </tr>
+
+        <tr>
+            <th>11:00-12:00</th>
+            <td>Science</td>
+            <td>History</td>
+            <td>Art</td>
+            <td>PE</td>
+            <td>Math</td>
+        </tr>
+
+        <tr>
+            <th>12:00-13:00</th>
+            <td colspan="5" style="text-align: center;">Lunch Break</td>
+        </tr>
+
+        <tr>
+            <th>13:00-14:00</th>
+            <td>English</td>
+            <td colspan="2" style="text-align: center;">Library Study</td>
+            <td>Science</td>
+            <td>History</td>
+        </tr>
+        <tr>
+            <th>14:00-15:00</th>
+            <td>Art</td>
+            <td>PE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Science</td>
+        </tr>
+    </table>
+</body>
+
+</html>
